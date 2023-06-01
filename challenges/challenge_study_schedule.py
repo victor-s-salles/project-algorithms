@@ -14,7 +14,7 @@ def study_schedule(permanence_period, target_time):
             or time[1] < 0
         ):
             return None
-        elif time[0] <= target_time <= time[1]:
+        if time[0] <= target_time <= time[1]:
             count += 1
 
     return count
